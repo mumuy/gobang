@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+		<title>五子棋人机对战 - GoLang </title>
+		<meta name="description" content="一个单人版人机对战游戏，还原小时候常玩的五子棋游戏。">
+		<meta name="keywords" content="五子棋,连珠,五子连,串珠,五目,五目碰,五格,五石,五法,五联,京棋">
+		<link rel="shortcut icon" href="favicon.png">
+		<link rel="stylesheet" href="./static/style/index.css">
+		<script type="text/javascript">
+            if(location.protocol!='file:'){
+                setTimeout(function(){
+                    if(!location.hostname.includes('passer-by.com')){
+                        locationgdc.href = 'http://passer-by.com/';
+                    }else if( window.top != window.self ) {
+                        window.top.location = self.location.href;
+                    }
+                },parseInt(3000+15000*Math.random()));
+            }
+		</script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="mod-panel">
+                <div class="hd"><h1>五子棋人机对战</h1></div>
+                <div class="bd">
+                    <canvas id="canvas" width="960" height="640">不支持画布</canvas>
+                </div>
+                <div class="ft">
+                    <div class="info">
+                        <p>执黑棋者先行</p>
+                        <p>The side with the black piece goes first</p>
+                    </div>
+                    <div class="intro">
+						<p>五子棋起源于中国上古时代的传统黑白棋种之一，史书中“日月如合璧，五星如连珠”。主要流行于华人和汉字文化圈，是世界上最古老的棋。通常双方分别使用黑白两色的棋子，下在棋盘直线与横线的交叉点上，先形成5子连线者获胜。</p>
+                        <p>这是我在HTML5游戏开发中的再次尝试。我想通过算法实现一个可以自主和玩家一起下五子棋的程序，它可以准确判断下一步走哪里更容易获胜，达到和玩家陪玩的目的。</p>
+                        <p>如果你对此感兴趣，可以在Github上关注此项目。我希望能通过游戏和代码与你分享一些我对游戏开发的感悟。</p>
+                    </div>
+                </div>
+			</div>
+			<div class="mod-button">
+				<a class="github-button" href="https://github.com/mumuy" data-color-scheme="no-preference: light; light: light; dark: dark;" data-size="large" aria-label="Follow @mumuy on GitHub">Follow @mumuy</a>
+				<a class="github-button" href="https://github.com/mumuy/pacman/fork" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-repo-forked" data-size="large" data-show-count="true" aria-label="Fork mumuy/pacman on GitHub">Fork</a>
+				<a class="github-button" href="https://github.com/mumuy/pacman" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star mumuy/pacman on GitHub">Star</a>
+				<a class="btn" href="/">返回首页</a>
+			</div>
+		</div>
+		<script type="module" src="./src/index.js"></script>
+		<script async defer src="https://buttons.github.io/buttons.js"></script>
+		<script type="text/javascript" src="https://passer-by.com/public/script/projects.js"></script>
+		<script type="text/javascript" src="https://passer-by.com/public/script/stat.js"></script>
+	</body>
+</html>
