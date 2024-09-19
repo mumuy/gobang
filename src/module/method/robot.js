@@ -106,11 +106,9 @@ export function findBestCoord(data,roleValue){
         return result[Math.floor(Math.random() * result.length)];
     };
 
-    let tempData = structuredClone(data);
     let bestCoord = find(data,roleValue);
     console.log('[bestCoord]',bestCoord);
-    tempData[bestCoord.x][bestCoord.y] = bestCoord.score;
-    let nextCoord = find(tempData,roleValue==1?2:1);
+    let nextCoord = find(data,roleValue==1?2:1);
     console.log('[nextCoord]',nextCoord);
     if(nextCoord.score>bestCoord.score&&nextCoord.score-bestCoord.score>4000){
         bestCoord = {
