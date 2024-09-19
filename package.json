@@ -1,0 +1,44 @@
+{
+    "name": "gobang",
+    "version": "1.0.0",
+    "description": "gobang game",
+    "author": "HaoLe Zheng",
+    "license": "MIT",
+    "keywords": [
+        "gobang",
+        "连珠",
+        "五子棋",
+        "五子棋对战",
+        "五子棋人机对战"
+    ],
+    "main": "./dist/gobang.min.js",
+    "exports": {
+        "default": "./dist/gobang.min.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mumuy/gobang.git"
+    },
+    "bugs": {
+        "url": "https://github.com/mumuy/gobang/issues"
+    },
+    "files":[
+        "dist"
+    ],
+    "devDependencies": {
+        "@babel/core": "^7.24.4",
+        "@babel/plugin-transform-runtime": "^7.24.3",
+        "@babel/preset-env": "^7.24.4",
+        "@babel/runtime": "^7.24.4",
+        "@rollup/plugin-babel": "^6.0.4",
+        "@rollup/plugin-node-resolve": "^15.2.3",
+        "@rollup/plugin-terser": "^0.4.4",
+        "rollup": "^3.29.4"
+    },
+    "scripts": {
+        "build": "rollup -c",
+        "watch": "rollup -wc"
+    },
+    "homepage": "https://passer-by.com/gobang/",
+    "directories": {}
+}
